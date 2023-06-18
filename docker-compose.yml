@@ -1,10 +1,11 @@
 version: '3.9'
 
+volumes:
+  static:
+
 services:
   nginx:
     build: ./
     restart: always
     ports:
       - 80:80
-    volumes:
-      - static:/etc/nginx/static/
