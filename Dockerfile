@@ -1,3 +1,4 @@
 FROM nginx:latest
 
-COPY static /usr/share/nginx/html
+COPY avatar.jpg /usr/share/nginx/html
+COPY index.html /usr/share/nginx/html
